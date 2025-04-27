@@ -1,0 +1,100 @@
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
+import React from "react";
+
+export default function HeroSection() {
+  return (
+    <>
+      <div className="w-full flex flex-row items-center justify-center sm:pt-16 pt-12 bg-gradient-to-r from-[#D9D9D9] to-[#333333] rounded-b-2xl max-w-screen-2xl mx-auto">
+        <div className="flex flex-col xl:w-2/3 w-1/2 pl-4 py-2 md:pl-10 xl:pl-40 lg:py-4">
+          <h1 className="sm:text-5xl text-base sm:mb-7 mb-2 text-[#1E624D] font-extrabold text-start">
+            Healthy Meat <br className="sm:block hidden mb-5" />
+            Naturally{" "}
+          </h1>
+
+          <div className="bg-white w-2/3 sm:block hidden h-0.5 sm:mb-6 mb-4 bg-gradient-to-r from-[#333] to-[#D9D9D9]"></div>
+
+          <p className="text-[#1E624D] sm:text-lg text-xs sm:mb-6 mb-1">
+            The healthiest meat at the comfort of your homes
+          </p>
+
+          <button className="self-start text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer">
+            Contact Us
+          </button>
+        </div>
+        <div className="xl:w-1/3 w-1/2">
+          <Image
+            src="/heroChicken.svg"
+            alt=""
+            width={500}
+            height={500}
+            className="w-full  transform scale-x-[-1] rounded-b-2xl"
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row items-center justify-around gap-5 p-5 max-w-screen-2xl mx-auto">
+        <div className="bg-[#1E624D] text-white text-center rounded-md p-7">
+          <p className="font-bold sm:text-sm text-xs mb-4">Technology Driven</p>
+          <div className="bg-white w-full h-0.5 mb-4"></div>
+          <p className="sm:text-xs text-xxs">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+            pretium tellus duis convallis.
+          </p>
+        </div>
+
+        <div className="bg-[#1E624D] text-white text-center rounded-md p-7">
+          <p className="font-bold sm:text-sm text-xs mb-4">
+            Professional Farmers
+          </p>
+          <div className="bg-white w-full h-0.5 mb-4"></div>
+          <p className="sm:text-xs text-xxs">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+            pretium tellus duis convallis.
+          </p>
+        </div>
+        <div className="bg-[#1E624D] text-white text-center rounded-md p-7">
+          <p className="font-bold sm:text-sm text-xs mb-4">Sustainability</p>
+          <div className="bg-white w-full h-0.5 mb-4"></div>
+          <p className="sm:text-xs text-xxs">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+            pretium tellus duis convallis.
+          </p>
+        </div>
+
+        <div className="bg-[#1E624D] text-white text-center rounded-md p-7">
+          <p className="font-bold sm:text-sm text-xs mb-4">
+            Quality Guaranteed
+          </p>
+          <div className="bg-white w-full h-0.5 mb-4"></div>
+          <p className="sm:text-xs text-xxs">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+            pretium tellus duis convallis.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-end  px-5 z-50 fixed right-0 top-160">
+        <div className="flex flex-col items-center">
+          <a
+            href="https://wa.me/2348037411405"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              size="2xl"
+              className=" text-[#1E624D] cursor-pointer"
+            />
+          </a>
+          <p className="text-red-500 sm:text-sm text-xs">Live chat</p>
+        </div>
+      </div>
+    </>
+  );
+}
