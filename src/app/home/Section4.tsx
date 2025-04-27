@@ -8,12 +8,78 @@ export default function Section4() {
         Partnerships and Collaborations
       </h2>
 
-      <div className="flex flex-row gap-3">
-        <Image src="" alt="" width={100} height={100} className="w-1/4" />
-        <Image src="" alt="" width={100} height={100} className="w-1/4" />
+      <div className="flex md:flex-row flex-col md:gap-7 gap-10 items-center justify-around p-5 mb-7">
+        <Image
+          src="/partnerGCRF.svg"
+          alt=""
+          width={100}
+          height={100}
+          className="md:w-[12%] w-[50%]"
+        />
+        <Image
+          src="/partnerOAU.svg"
+          alt=""
+          width={100}
+          height={100}
+          className="md:w-[10%] w-[40%]"
+        />
+        <Image
+          src="/partnerBOI.svg"
+          alt=""
+          width={100}
+          height={100}
+          className="md:w-1/6 w-[60%]"
+        />
+        <Image
+          src="/partnerUKRI.svg"
+          alt=""
+          width={100}
+          height={100}
+          className="md:w-1/6 w-[60%]"
+        />
+        <Image
+          src="/partnerUWE.svg"
+          alt=""
+          width={100}
+          height={100}
+          className="md:w-1/6 w-[60%]"
+        />
       </div>
 
-      <div className="w-full flex sm:flex-row flex-col-reverse rounded-lg shadow-2xl blur-2xl bg-white"></div>
+      <div className="md:w-[70%] w-[80%] flex md:flex-row flex-col-reverse items-center justify-between rounded-2xl shadow-2xl bg-white py-5 px-7">
+        <div className="md:w-1/2 w-full flex flex-col  p-5">
+          <p className="text-[#1E624D] md:text-start text-center sm:text-2xl text-base mb-7">
+            Gain Insights to Poultry and Other Farming Areas
+          </p>
+
+          <p className="text-black md:text-start text-center font-bold sm:text-lg text-sm mb-4">
+            Subscribe to our newsletter
+          </p>
+
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            className="w-full p-3 text-[#333] border border-gray-400 rounded-full focus:outline-none"
+          />
+
+          <button
+            type="submit"
+            className="md:self-start self-center text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer mt-5"
+          >
+            Join Newsletter
+          </button>
+        </div>
+
+        <div className="md:w-1/2 w-full flex items-center justify-center p-5">
+          <Image
+            src="/newsletterChicken.svg"
+            alt=""
+            width={100}
+            height={100}
+            className="w-[70%]"
+          />
+        </div>
+      </div>
     </div>
   );
 }

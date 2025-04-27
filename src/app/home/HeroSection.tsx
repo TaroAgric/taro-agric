@@ -89,7 +89,7 @@ export default function HeroSection() {
             <FontAwesomeIcon
               icon={faWhatsapp}
               size="2xl"
-              className=" text-[#1E624D] cursor-pointer"
+              className=" text-[#1E624D] stroke-3 stroke-white cursor-pointer"
             />
           </a>
           <p className="text-red-500 sm:text-sm text-xs">Live chat</p>
