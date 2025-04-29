@@ -73,7 +73,7 @@ export default function Footer() {
           <div className="flex flex-col lg:items-start items-center md:w-1/3 w-full md:gap-5 gap-2">
             <p className="text-black text-xl font-bold">Address</p>
             <p className="text-black sm:text-lg text-sm lg:text-center text-center">
-              Suite 6, Rotkay Complex, opposite OAUTHC Phase 1, Ile-Ife
+              Obiri Village, Along Ife-Ondo Road, Erefe, Ile-Ife.
             </p>
           </div>
 
