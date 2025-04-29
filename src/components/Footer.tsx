@@ -36,22 +36,31 @@ export default function Footer() {
             </p>
 
             <div className="flex flex-row gap-5">
-              <Link href="">
+              <Link href="https://x.com/Taroagric" target="_blank">
                 <FontAwesomeIcon
                   icon={faX}
                   size="lg"
                   className="text-[#1E624D] mr-4"
                 />
+              </Link>
+              <Link href="https://web.facebook.com/taroagric/" target="_blank">
                 <FontAwesomeIcon
                   icon={faFacebook}
                   size="lg"
                   className="text-[#1E624D] mr-4"
                 />
+              </Link>
+              <Link href="https://www.instagram.com/taroagric/" target="_blank">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   size="lg"
                   className="text-[#1E624D] mr-4"
                 />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/taro-agric/"
+                target="_blank"
+              >
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   size="lg"
@@ -71,10 +80,15 @@ export default function Footer() {
           <div className="flex flex-col lg:items-start items-center md:w-1/3 w-full md:gap-5 gap-2">
             <p className="text-black text-xl font-bold">Quick Links</p>
             <ul>
-              <li className="text-[#1E624D] font-bold">Who We Are</li>
-              <li className="text-[#1E624D] font-bold">Our Outlets</li>
-              <li className="text-[#1E624D] font-bold">Resources</li>
-              <li className="text-[#1E624D] font-bold">Newsletter</li>
+              <Link href="/whoWeAre">
+                <li className="text-[#1E624D] font-bold">Who We Are</li>
+              </Link>
+              <Link href="/ourOutlets">
+                <li className="text-[#1E624D] font-bold">Our Outlets</li>
+              </Link>
+              <Link href="/resources">
+                <li className="text-[#1E624D] font-bold">Resources</li>
+              </Link>
             </ul>
           </div>
         </div>

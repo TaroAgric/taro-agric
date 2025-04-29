@@ -17,10 +17,12 @@ export default function Section2() {
         </h2>
 
         <p className="sm:text-lg text-xs text-black">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor.
+          At our farm, we believe every family deserves fresh, wholesome chicken
+          they can trust. Our birds are raised in clean, healthy environments
+          with the highest standards of care. From nutritious feed to humane
+          practices, we ensure every chicken is nurtured naturally. We’re
+          committed to putting safe, delicious poultry on your table — every
+          day, for every meal.
         </p>
       </div>
     </div>

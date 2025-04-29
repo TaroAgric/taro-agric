@@ -1,3 +1,4 @@
+"use client";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -19,7 +20,14 @@ export default function HeroSection() {
             The healthiest meat at the comfort of your homes
           </p>
 
-          <button className="self-start text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer">
+          <button
+            onClick={() => {
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="self-start text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer"
+          >
             Contact Us
           </button>
         </div>
@@ -39,9 +47,9 @@ export default function HeroSection() {
           <p className="font-bold sm:text-sm text-xs mb-4">Technology Driven</p>
           <div className="bg-white w-full h-0.5 mb-4"></div>
           <p className="sm:text-xs text-xxs">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis.
+            We harness the power of innovation to ensure smarter, healthier
+            farming practices. From precision feeding to modern breeding
+            systems, we lead with cutting-edge solutions for superior results.
           </p>
         </div>
 
@@ -51,18 +59,18 @@ export default function HeroSection() {
           </p>
           <div className="bg-white w-full h-0.5 mb-4"></div>
           <p className="sm:text-xs text-xxs">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis.
+            Our team is made up of seasoned experts who bring passion and
+            precision to every bird. With years of experience, we deliver
+            excellence from hatch to harvest.
           </p>
         </div>
         <div className="bg-[#1E624D] text-white text-center rounded-md p-7">
           <p className="font-bold sm:text-sm text-xs mb-4">Sustainability</p>
           <div className="bg-white w-full h-0.5 mb-4"></div>
           <p className="sm:text-xs text-xxs">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis.
+            We farm with tomorrow in mind, nurturing both our birds and the
+            planet. Every step we take is rooted in care, conservation, and
+            responsibility.
           </p>
         </div>
 
@@ -72,9 +80,8 @@ export default function HeroSection() {
           </p>
           <div className="bg-white w-full h-0.5 mb-4"></div>
           <p className="sm:text-xs text-xxs">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis.
+            Every bird is raised under the highest standards of health, safety,
+            and care. From farm to table, we promise products you can trust.
           </p>
         </div>
       </div>

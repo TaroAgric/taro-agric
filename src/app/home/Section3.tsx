@@ -50,11 +50,12 @@ export default function Section3() {
             </div>
 
             <p className="text-black">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-              faucibus ex sapien vitae pellentesque sem placerat. In id cursus
-              mi pretium tellus duis convallis.
+              "Taro Farms delivers the freshest, healthiest chicken we've ever
+              had! The quality is unmatched, and you can truly taste the
+              difference. Highly recommended for any family that values clean,
+              safe food."
             </p>
-            <p className="text-black font-bold text-end">--John Taro</p>
+            <p className="text-black font-bold text-end">--Tola Asa</p>
           </div>
 
           <div className="bg-[#ffffff] text-white text-center rounded-md p-7 flex flex-col py-4 px-8">
@@ -97,11 +98,12 @@ export default function Section3() {
             </div>
 
             <p className="text-black">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-              faucibus ex sapien vitae pellentesque sem placerat. In id cursus
-              mi pretium tellus duis convallis.
+              "We've been buying from Taro Farms for months, and they never
+              disappoint. Their commitment to quality and service is
+              outstanding. I gladly recommend them to anyone looking for
+              trustworthy farm produce."
             </p>
-            <p className="text-black font-bold text-end">--John Taro</p>
+            <p className="text-black font-bold text-end">--Tinuke Martins</p>
           </div>
 
           <div className="bg-[#ffffff] text-white text-center rounded-md p-7 flex flex-col py-4 px-8">
@@ -144,11 +146,11 @@ export default function Section3() {
             </div>
 
             <p className="text-black">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-              faucibus ex sapien vitae pellentesque sem placerat. In id cursus
-              mi pretium tellus duis convallis.
+              "From the first order, we knew Taro Farms was special. The chicken
+              is always fresh, tender, and full of flavor. Definitely a farm you
+              can count on and come back to again and again!"
             </p>
-            <p className="text-black font-bold text-end">--John Taro</p>
+            <p className="text-black font-bold text-end">--Oluwatoyin 'Yato</p>
           </div>
         </div>
       </div>

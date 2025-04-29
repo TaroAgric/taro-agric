@@ -1,7 +1,18 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Section4() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <div className="flex flex-col items-center justify-around gap-5 sm:py-16 py-5 max-w-screen-2xl mx-auto">
       <h2 className="sm:text-4xl text-base font-bold text-[#1E624D] text-center">
@@ -64,6 +75,7 @@ export default function Section4() {
 
           <button
             type="submit"
+            onClick={handleButtonClick}
             className="md:self-start self-center text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer mt-5"
           >
             Join Newsletter
@@ -80,6 +92,22 @@ export default function Section4() {
           />
         </div>
       </div>
+
+      {showPopup && (
+        <div className="fixed inset-0 flex items-center justify-center bg-[#d9d9d9] bg-opacity-30 z-50">
+          <div className="bg-white p-5 rounded-lg shadow-lg w-[90%] sm:w-[400px] text-center">
+            <button
+              onClick={handleClosePopup}
+              className="text-black self-end text-xl flex"
+            >
+              &times;
+            </button>
+            <p className="text-[#1E624D] font-bold mb-4">
+              We're still working on this. Kindly give us a moment.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
