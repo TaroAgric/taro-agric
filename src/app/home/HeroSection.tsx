@@ -42,44 +42,46 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-around gap-5 p-5 max-w-screen-2xl mx-auto">
-        <div className="bg-[#1E624D] text-white text-center rounded-md p-7">
-          <p className="font-bold sm:text-sm text-xs mb-4">Technology Driven</p>
+      <div className="flex flex-col lg:flex-row items-stretch justify-around gap-5 p-5 max-w-screen-2xl mx-auto">
+        <div className="bg-[#1E624D] text-white text-center rounded-md p-7 lg:w-1/4 w-full h-full">
+          <p className="font-bold xl:text-2xl text-lg mb-4">
+            Technology Driven
+          </p>
           <div className="bg-white w-full h-0.5 mb-4"></div>
-          <p className="sm:text-xs text-xxs">
+          <p className="xl:text-xl text-base">
             We harness the power of innovation to ensure smarter, healthier
-            farming practices. From precision feeding to modern breeding
-            systems, we lead with cutting-edge solutions for superior results.
+            farming practices. We lead with cutting-edge solutions for superior
+            results.
           </p>
         </div>
 
-        <div className="bg-[#1E624D] text-white text-center rounded-md p-7">
-          <p className="font-bold sm:text-sm text-xs mb-4">
+        <div className="bg-[#1E624D] text-white text-center rounded-md p-7 lg:w-1/4 w-full h-full">
+          <p className="font-bold xl:text-2xl text-lg mb-4">
             Professional Farmers
           </p>
           <div className="bg-white w-full h-0.5 mb-4"></div>
-          <p className="sm:text-xs text-xxs">
+          <p className="xl:text-xl text-base">
             Our team is made up of seasoned experts who bring passion and
             precision to every bird. With years of experience, we deliver
             excellence from hatch to harvest.
           </p>
         </div>
-        <div className="bg-[#1E624D] text-white text-center rounded-md p-7">
-          <p className="font-bold sm:text-sm text-xs mb-4">Sustainability</p>
+        <div className="bg-[#1E624D] text-white text-center rounded-md p-7 lg:w-1/4 w-full h-full">
+          <p className="font-bold xl:text-2xl text-lg mb-4">Sustainability</p>
           <div className="bg-white w-full h-0.5 mb-4"></div>
-          <p className="sm:text-xs text-xxs">
+          <p className="xl:text-xl text-base">
             We farm with tomorrow in mind, nurturing both our birds and the
             planet. Every step we take is rooted in care, conservation, and
             responsibility.
           </p>
         </div>
 
-        <div className="bg-[#1E624D] text-white text-center rounded-md p-7">
-          <p className="font-bold sm:text-sm text-xs mb-4">
+        <div className="bg-[#1E624D] text-white text-center rounded-md p-7 lg:w-1/4 w-full h-full">
+          <p className="font-bold xl:text-2xl text-lg mb-4">
             Quality Guaranteed
           </p>
           <div className="bg-white w-full h-0.5 mb-4"></div>
-          <p className="sm:text-xs text-xxs">
+          <p className="xl:text-xl text-base">
             Every bird is raised under the highest standards of health, safety,
             and care. From farm to table, we promise products you can trust.
           </p>

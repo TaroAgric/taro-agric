@@ -9,7 +9,7 @@ export default function Section3() {
           Hear From Those Who Trust Us
         </h2>
 
-        <div className="flex flex-col md:flex-row items-center justify-around gap-5 p-5">
+        <div className="flex flex-col xl:flex-row items-center justify-around gap-5 p-5">
           <div className="bg-[#ffffff] text-white text-center rounded-md p-7 flex flex-col py-4 px-8">
             <div className="flex flex-row gap-1 mb-4">
               <Image

@@ -57,8 +57,8 @@ export default function Section4() {
         />
       </div>
 
-      <div className="md:w-[70%] w-[80%] flex md:flex-row flex-col-reverse items-center justify-between rounded-2xl shadow-2xl bg-white py-5 px-7">
-        <div className="md:w-1/2 w-full flex flex-col  p-5">
+      <div className="md:w-[70%] w-[80%] flex md:flex-row flex-col-reverse items-center justify-between rounded-2xl shadow-2xl bg-white py-5 sm:px-7 px-0">
+        <div className="md:w-1/2 w-full flex flex-col p-5">
           <p className="text-[#1E624D] md:text-start text-center sm:text-2xl text-base mb-7">
             Gain Insights to Poultry and Other Farming Areas
           </p>
@@ -76,7 +76,7 @@ export default function Section4() {
           <button
             type="submit"
             onClick={handleButtonClick}
-            className="md:self-start self-center text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer mt-5"
+            className="md:self-start self-stretch text-white sm:text-base text-sm bg-[#1E624D] font-bold xl:py-7 py-3 sm:px-10 px-4 rounded-full cursor-pointer mt-5"
           >
             Join Newsletter
           </button>
