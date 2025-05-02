@@ -10,9 +10,9 @@ export default function WhoWeAre() {
   return (
     <>
       <Navbar />
-      <Section1 />
-      <Section2 />
-      {/* <div className="flex flex-col items-center justify-center h-screen">
+      {/* <Section1 />
+      <Section2 /> */}
+      <div className="flex flex-col items-center justify-center h-screen">
         <h1 className="text-2xl text-black font-bold mb-4">Who We Are</h1>
         <Image
           src="/underConst.svg"
@@ -30,7 +30,7 @@ export default function WhoWeAre() {
         >
           Back to Home Page
         </Link>
-      </div> */}
+      </div>
       <Footer />
     </>
   );
