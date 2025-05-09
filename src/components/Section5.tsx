@@ -46,13 +46,14 @@ export default function Section5() {
       className="bg-[#1E624D] flex flex-col items-center sm:py-16 py-5"
     >
       <div className="max-w-screen-2xl mx-auto">
-        <h2 className="sm:text-4xl text-base font-bold text-white text-center">
-          Contact Us
+        <h2 className="sm:text-4xl text-3xl font-bold text-white text-center">
+          Here to Serve!
         </h2>
 
         <p className="p-5 text-center">
-          We want to hear from you about trainings, research, collaborations, IT
-          placements, public engagements, and other matters of interest.
+          We want to hear from you about distributorship, trainings, research,
+          collaborations, IT placements, public engagements, and other matters
+          of interest.
         </p>
 
         <form
@@ -94,7 +95,8 @@ export default function Section5() {
 
           <button
             type="submit"
-            className="bg-white text-[#1E624D] p-2 rounded-md w-full md:w-1/3 font-bold"
+            style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+            className="bg-white text-[#1E624D] p-2 rounded-full w-full md:w-1/3 font-bold"
           >
             SEND
           </button>

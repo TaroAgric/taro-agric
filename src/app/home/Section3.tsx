@@ -3,9 +3,9 @@ import React from "react";
 
 export default function Section3() {
   return (
-    <div className="bg-[#1E624D] flex flex-col items-center sm:py-16 py-5 ">
+    <div className="bg-[#1E624D] flex flex-col items-center sm:py-16 py-5 sm:mb-20 mb-10">
       <div className="max-w-screen-2xl mx-auto">
-        <h2 className="sm:text-4xl text-base font-bold text-white text-center">
+        <h2 className="sm:text-4xl text-xl font-bold text-white text-center">
           Hear From Those Who Trust Us
         </h2>
 

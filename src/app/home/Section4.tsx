@@ -19,7 +19,7 @@ export default function Section4() {
         Partnerships and Collaborations
       </h2>
 
-      <div className="flex md:flex-row flex-col md:gap-7 gap-10 items-center justify-around p-5 mb-7">
+      <div className="flex md:flex-row flex-col md:gap-7 gap-10 items-center justify-around p-5 sm:mb-20 mb-10">
         <Image
           src="/partnerGCRF.svg"
           alt=""
@@ -57,13 +57,13 @@ export default function Section4() {
         />
       </div>
 
-      <div className="md:w-[70%] w-[80%] flex md:flex-row flex-col-reverse items-center justify-between rounded-2xl shadow-2xl bg-white py-5 sm:px-7 px-0">
-        <div className="md:w-1/2 w-full flex flex-col p-5">
-          <p className="text-[#1E624D] md:text-start text-center sm:text-2xl text-base mb-7">
+      <div className="md:w-[70%] w-[80%] flex xl:flex-row flex-col-reverse items-center justify-between rounded-2xl shadow-2xl bg-white py-5 sm:px-7 px-0">
+        <div className="xl:w-1/2 w-full flex flex-col p-5">
+          <p className="text-[#1E624D] xl:text-start text-center sm:text-2xl text-base mb-7">
             Gain Insights to Poultry and Other Farming Areas
           </p>
 
-          <p className="text-black md:text-start text-center font-bold sm:text-lg text-sm mb-4">
+          <p className="text-black xl:text-start text-center font-bold sm:text-lg text-sm mb-4">
             Subscribe to our newsletter
           </p>
 
@@ -76,13 +76,14 @@ export default function Section4() {
           <button
             type="submit"
             onClick={handleButtonClick}
-            className="md:self-start self-stretch text-white sm:text-base text-sm bg-[#1E624D] font-bold xl:py-7 py-3 sm:px-10 px-4 rounded-full cursor-pointer mt-5"
+            style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+            className="xl:self-start self-stretch text-white sm:text-base text-sm bg-[#1E624D] font-bold xl:py-7 py-3 sm:px-10 px-4 rounded-full cursor-pointer mt-5"
           >
-            Join Newsletter
+            SUBSCRIBE TO NEWSLETTER{" "}
           </button>
         </div>
 
-        <div className="md:w-1/2 w-full flex items-center justify-center p-5">
+        <div className="xl:w-1/2 w-full flex items-center justify-center p-5">
           <Image
             src="/newsletterChicken.svg"
             alt=""
@@ -94,7 +95,10 @@ export default function Section4() {
       </div>
 
       {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-[#d9d9d9] bg-opacity-30 z-50">
+        <div
+          className="fixed inset-0 flex items-center justify-center z-50"
+          style={{ backgroundColor: "rgba(217, 217, 217, 0.8" }}
+        >
           <div className="bg-white p-5 rounded-lg shadow-lg w-[90%] sm:w-[400px] text-center">
             <button
               onClick={handleClosePopup}

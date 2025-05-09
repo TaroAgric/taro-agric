@@ -1,14 +1,26 @@
 "use client";
+import Section5 from "@/components/Section5";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export default function HeroSection() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleOrderNowClick = () => {
+    setShowPopup(true);
+  };
+
+  const handleClose = () => {
+    setShowPopup(false);
+  };
+
   return (
     <>
-      <div className="w-full flex flex-row items-center justify-center sm:pt-16 pt-12 bg-gradient-to-r from-[#D9D9D9] to-[#333333] rounded-b-2xl max-w-screen-2xl mx-auto">
-        <div className="flex flex-col xl:w-2/3 w-1/2 pl-4 py-2 md:pl-10 xl:pl-40 lg:py-4">
+      {/* from-[#D9D9D9] to-[#333333] */}
+      <div className="w-full flex flex-row items-center justify-between sm:pt-16 pt-12 bg-gradient-to-r from-[#E8DFCA] to-[#F5EFE6] rounded-b-2xl max-w-screen-2xl mx-auto sm:mb-10 mb-5">
+        <div className="flex flex-col xl:w-1/2 w-1/2 pl-4 py-2 md:pl-10 xl:pl-40 lg:py-4">
           <h1 className="sm:text-5xl text-base sm:mb-7 mb-2 text-[#1E624D] font-extrabold text-start">
             Healthy Meat <br className="sm:block hidden mb-5" />
             Naturally{" "}
@@ -21,28 +33,38 @@ export default function HeroSection() {
           </p>
 
           <button
-            onClick={() => {
-              document
-                .getElementById("contact")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
+            // onClick={() => {
+            //   document
+            //     .getElementById("contact")
+            //     ?.scrollIntoView({ behavior: "smooth" });
+            // }}
+            type="button"
+            onClick={handleOrderNowClick}
+            style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             className="self-start text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer"
           >
-            Contact Us
+            ORDER NOW{" "}
           </button>
         </div>
-        <div className="xl:w-1/3 w-1/2">
+        <div className="xl:w-1/3 w-1/2 md:pr-0 xl:pr-10">
           <Image
+            src="/farmerWithBroiler.svg"
+            alt=""
+            width={500}
+            height={500}
+            className="w-full   rounded-b-2xl"
+          />
+          {/* <Image
             src="/heroChicken.svg"
             alt=""
             width={500}
             height={500}
             className="w-full  transform scale-x-[-1] rounded-b-2xl"
-          />
+          /> */}
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-stretch justify-around gap-5 p-5 max-w-screen-2xl mx-auto">
+      <div className="flex flex-col lg:flex-row items-stretch justify-around gap-5 p-5 max-w-screen-2xl mx-auto sm:mb-20 mb-10">
         <div className="bg-[#1E624D] text-white text-center rounded-md p-7 lg:w-1/4 w-full h-full">
           <p className="font-bold xl:text-2xl text-lg mb-4">
             Technology Driven
@@ -104,6 +126,23 @@ export default function HeroSection() {
           <p className="text-red-500 sm:text-sm text-xs">Live chat</p>
         </div>
       </div>
+
+      {showPopup && (
+        <div
+          className="fixed inset-0 flex items-center justify-center z-50"
+          style={{ background: "rgba(217, 217, 217, 0.8" }}
+        >
+          <div className="relative bg-white rounded-lg shadow-lg w-[90%] sm:w-[800px] max-h-[90%] overflow-y-auto">
+            <button
+              onClick={handleClose}
+              className="absolute top-2 right-2 text-black text-xl font-bold"
+            >
+              &times;
+            </button>
+            <Section5 />
+          </div>
+        </div>
+      )}
     </>
   );
 }

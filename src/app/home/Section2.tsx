@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Section2() {
   return (
-    <div className="flex xl:flex-row flex-col items-center justify-around gap-7 p-5 max-w-screen-2xl mx-auto">
+    <div className="flex xl:flex-row flex-col items-center justify-around gap-7 p-5 max-w-screen-2xl mx-auto sm:mb-20 mb-10">
       <Image
         src="/broilers1.svg"
         alt=""

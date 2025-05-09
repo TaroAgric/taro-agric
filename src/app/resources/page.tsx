@@ -3,12 +3,16 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Section1 from "./Section1";
+import Section2 from "./Section2";
 
 export default function Resources() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col items-center justify-center h-screen">
+      <Section1 />
+      <Section2 />
+      {/* <div className="flex flex-col items-center justify-center h-screen">
         <h1 className="text-2xl text-black font-bold mb-4">Resources</h1>
         <Image
           src="/underConst.svg"
@@ -26,7 +30,7 @@ export default function Resources() {
         >
           Back to Home Page
         </Link>
-      </div>
+      </div> */}
       <Footer />
     </>
   );

@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Section2() {
   return (
-    <div className="flex flex-col items-center justify-center gap-5 p-5 max-w-screen-2xl mx-auto">
-      <div className="flex md:flex-row flex-col-reverse items-center justify-around gap-5 md:mb-10 mb-0">
+    <div className="flex flex-col items-center justify-center gap-5 p-5 max-w-screen-2xl mx-auto overflow-hidden sm:mb-20 mb-10">
+      {/* <div className="flex md:flex-row flex-col-reverse items-center justify-around gap-5 md:mb-20 mb-10">
         <div className="flex flex-col md:w-1/2 w-full md:text-start text-center">
           <h2 className="sm:text-4xl text-xl text-[#1E624D] sm:mb-6 mb-2 font-bold w-full">
             CEO's Message
@@ -23,37 +24,54 @@ export default function Section2() {
             allowFullScreen
           />
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col gap-5">
-        <div className="flex xl:flex-row flex-col items-center gap-5 lg:mb-10 mb-0">
-          <div>
-            <h2 className="sm:text-4xl text-xl text-[#1E624D] text-center sm:mb-6 mb-2 font-bold w-full">
-              Vision
-            </h2>
-            <p className="sm:text-2xl text-base text-black text-center sm:mb-5 mb-3">
-              Our vision is to be among the top 1% in the Nigeria Poultry
-              industry.
-            </p>
-          </div>
-          <div>
-            <h2 className="sm:text-4xl text-xl text-[#1E624D] text-center sm:mb-6 mb-2 font-bold w-full">
-              Mission
-            </h2>
-            <p className="sm:text-2xl text-base text-black text-center sm:mb-5 mb-3">
-              Our mission is to produce quality products that deliver superior
-              value, outstanding quality and offer best prices.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col items-center">
+      <div className="flex flex-col text-center gap-5">
+        <div className="">
           <h2 className="sm:text-4xl text-xl text-[#1E624D] text-center sm:mb-6 mb-2 font-bold w-full">
-            Goal
+            Our Vision, Mission, and Goal
           </h2>
-          <p className="sm:text-2xl text-base text-black text-center sm:mb-5 mb-3">
-            We aim to be the leading agricultural brand in Nigeria in the next 5
-            years.
-          </p>
+        </div>
+
+        <div className="flex md:flex-row flex-col items-center gap-5">
+          <div className=" md:w-1/2 w-full shadow-2xl rounded-full transform transition-transform duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:shadow-md">
+            <Image
+              src="/taroLogo.svg"
+              alt=""
+              width={100}
+              height={100}
+              className="w-full"
+            />
+          </div>
+          <div className="flex flex-col md:w-1/2 w-full">
+            <div>
+              <h2 className="sm:text-xl text-sm text-[#1E624D] text-center sm:mb-3 mb-1 font-extrabold w-full">
+                Vision
+              </h2>
+              <p className="sm:text-2xl text-base text-black text-center sm:mb-7 mb-5">
+                Our vision is to be among the top 1% in the Nigeria Poultry
+                industry.
+              </p>
+            </div>
+            <div>
+              <h2 className="sm:text-xl text-sm text-[#1E624D] text-center sm:mb-3 mb-1 font-extrabold w-full">
+                Mission
+              </h2>
+              <p className="sm:text-2xl text-base text-black text-center sm:mb-7 mb-5">
+                Our mission is to produce quality products that deliver superior
+                value, outstanding quality and offer best prices.
+              </p>
+            </div>
+            <div>
+              <h2 className="sm:text-xl text-sm text-[#1E624D] text-center sm:mb-3 mb-1 font-extrabold w-full">
+                Goal
+              </h2>
+              <p className="sm:text-2xl text-base text-black text-center sm:mb-7 mb-5">
+                We aim to be the leading agricultural brand in Nigeria in the
+                next 5 years.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
