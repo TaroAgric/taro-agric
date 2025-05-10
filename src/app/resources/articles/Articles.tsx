@@ -44,7 +44,7 @@ export default function Articles() {
 
   return (
     <div className="flex flex-col items-center justify-center p-5">
-      <h1 className="text-2xl font-bold p-5 text-black">
+      <h1 className="text-2xl font-bold p-5 text-black text-center">
         This page is coming soon.
       </h1>
       {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-6">

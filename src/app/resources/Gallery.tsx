@@ -99,7 +99,7 @@ export default function Gallery() {
   return (
     <div className="flex flex-col items-center justify-center py-5 px-10">
       <h1 className="text-2xl text-black text-center font-bold p-5">
-        This page is coming soon
+        This page is coming soon.
       </h1>
 
       {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-screen-2xl mx-auto">

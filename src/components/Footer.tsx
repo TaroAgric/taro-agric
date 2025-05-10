@@ -18,7 +18,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className="bg-white mt-0">
+    <div className="bg-white mt-0 shadow-[0_-4px_25px_-5px_rgba(0,0,0,0.1)]">
       <div className="flex flex-col px-3 md:px-10 py-10 overflow-hidden max-w-screen-2xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-between lg:items-start pb-28 gap-10 w-full">
           <div className="flex flex-col lg:items-start items-center md:w-1/3 w-full md:gap-5 gap-2">
