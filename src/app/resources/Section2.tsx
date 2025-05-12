@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import Gallery from "./Gallery";
 import Articles from "./articles/Articles";
 import Faq from "./Faq";
+import dynamic from "next/dynamic";
+
+// const Articles = dynamic(() => import("./articles/Articles"), { ssr: true });
 
 export default function Section2() {
   const [active, setActive] = useState("Gallery");

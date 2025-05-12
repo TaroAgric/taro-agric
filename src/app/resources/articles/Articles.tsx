@@ -1,53 +1,100 @@
-"use client";
+// import fs from "fs";
+// import path from "path";
+// import matter from "gray-matter";
+// import { getArticles } from "@/lib/articles";
 import Link from "next/link";
 
 import React, { useEffect, useState } from "react";
 
-// interface Article {
-//   id: string;
-//   title: string;
-//   author: string;
-//   date: string;
-//   image: string;
-//   subHeading?: string;
-//   body?: string;
+interface ArticleMeta {
+  id: string;
+  title: string;
+  author: string;
+  date: string;
+  image: string;
+}
+
+// function getArticles(): ArticleMeta[] {
+//   const articlesDir = path.join(process.cwd(), "src/content/articles");
+//   const files = fs.readdirSync(articlesDir);
+
+//   return files
+//     .filter((file) => file.endsWith(".md"))
+//     .map((file) => {
+//       const filePath = path.join(articlesDir, file);
+//       const content = fs.readFileSync(filePath, "utf8");
+//       const { data } = matter(content);
+
+//       return {
+//         id: file.replace(".md", ""),
+//         title: data.title,
+//         author: data.author,
+//         date: data.date,
+//         image: data.image,
+//       };
+//     });
 // }
 
 export default function Articles() {
-  // const [articles, setArticles] = useState<Article[]>([]);
-  // const [error, setError] = useState<string | null>(null);
+  const [articles, setArticles] = useState<ArticleMeta[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-  // useEffect(() => {
-  //   async function fetchArticles() {
-  //     try {
-  //       const res = await fetch("/articlesFolder/articles.json");
-  //       if (!res.ok) {
-  //         throw new Error("Failed to fetch articles");
-  //       }
-  //       const data = await res.json();
-  //       setArticles(data);
-  //     } catch (err) {
-  //       setError((err as Error).message);
-  //     }
-  //   }
+  useEffect(() => {
+    async function fetchArticles() {
+      try {
+        // Get list of articles
+        const response = await fetch("/api/articles");
+        // const response = await fetch("src/content/articles/articles-list.json");
+        // const articleFiles = await response.json();
 
-  //   fetchArticles();
-  // }, []);
+        if (!response.ok) {
+          throw new Error("Failed to fetch articles");
+        }
 
-  // if (error) {
-  //   return <p className="text-red-500">Error: {error}</p>;
-  // }
+        // const fetchArticles = await Promise.all(
+        //   articleFiles.map(async (file: string) => {
+        //     const res = await fetch(`/articles/${file}`);
+        //     const text = await res.text();
+        //     const { data } = matter(text);
+        //     return data as ArticleMeta;
+        //   })
+        // );
+
+        const data = await response.json();
+
+        // setArticles(fetchArticles);
+        setArticles(data);
+      } catch (err) {
+        setError((err as Error).message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchArticles();
+  }, []);
+
+  if (loading) {
+    return <p className="text-gray-500 text-center p-8">Loading articles...</p>;
+  }
+
+  if (error) {
+    return <p className="text-red-500 text-center p-8">Error: {error}</p>;
+  }
 
   // if (articles.length === 0) {
-  //   return <p className="text-gray-500">Loading articles...</p>;
+  //   return <p className="text-gray-500">No articles found.</p>;
   // }
 
+  // const articles = getArticles();
+
   return (
-    <div className="flex flex-col items-center justify-center p-5">
-      <h1 className="text-2xl font-bold p-5 text-black text-center">
+    <div className="flex flex-col items-center justify-center py-5 px-10 max-w-screen-2xl mx-auto">
+      {/* <h1 className="text-2xl font-bold p-5 text-black text-center">
         This page is coming soon.
-      </h1>
-      {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      </h1> */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 self-center">
         {articles.map((article) => (
           <div
             key={article.id}
@@ -56,24 +103,27 @@ export default function Articles() {
             <img
               src={article.image}
               alt={article.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-32 object-cover"
             />
             <div className="p-4">
               <h2 className="text-xl text-black text-center font-bold">
                 {article.title}
               </h2>
-              <p className=""></p>
+              <div className="flex justify-between text-xs text-gray-600 mb-4">
+                <span>By {article.author}</span>
+                <span>{new Date(article.date).toLocaleDateString()}</span>
+              </div>
 
               <Link
                 href={`/resources/articles/${article.id}`}
-                className="text-blue-500 text-center hover:underline mt-4 block"
+                className="text-blue-500 text-end hover:underline mt-4 block"
               >
-                Read More
+                Read
               </Link>
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }

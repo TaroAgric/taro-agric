@@ -110,7 +110,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="flex flex-col items-end  px-5 z-50 fixed right-0 top-160">
+      <div className="flex flex-col items-end  px-5 z-50 fixed right-0 top-[650px]">
         <div className="flex flex-col items-center">
           <a
             href="https://wa.me/2348037411405"
@@ -135,7 +135,7 @@ export default function HeroSection() {
           <div className="relative bg-white rounded-lg shadow-lg w-[90%] sm:w-[800px] max-h-[90%] overflow-y-auto">
             <button
               onClick={handleClose}
-              className="absolute top-2 right-2 text-black text-xl font-bold"
+              className="absolute top-2 right-2 text-white text-xl font-bold"
             >
               &times;
             </button>
