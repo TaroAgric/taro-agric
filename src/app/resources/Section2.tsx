@@ -10,13 +10,13 @@ import dynamic from "next/dynamic";
 export default function Section2() {
   const [active, setActive] = useState("Gallery");
 
-  const headers = ["Gallery", "Articles", "FAQs"];
+  const headers = ["Gallery", "Blog", "FAQs"];
 
   const renderContent = () => {
     switch (active) {
       case "Gallery":
         return <Gallery />;
-      case "Articles":
+      case "Blog":
         return <Articles />;
       case "FAQs":
         return <Faq />;
@@ -26,7 +26,7 @@ export default function Section2() {
   };
 
   return (
-    <div className="">
+    <div className="mt-0">
       <div className="flex flex-row items-center justify-around max-w-screen-2xl mx-auto">
         {headers.map((header) => (
           <div key={header} className="flex flex-col items-center">

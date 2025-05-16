@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Section4() {
@@ -27,6 +28,7 @@ export default function Section4() {
           height={100}
           className="md:w-[12%] w-[50%]"
         />
+
         <Image
           src="/partnerOAU.svg"
           alt=""
@@ -34,6 +36,7 @@ export default function Section4() {
           height={100}
           className="md:w-[10%] w-[40%]"
         />
+
         <Image
           src="/partnerBOI.svg"
           alt=""

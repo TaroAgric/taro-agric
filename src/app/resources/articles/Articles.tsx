@@ -91,10 +91,10 @@ export default function Articles() {
 
   return (
     <div className="flex flex-col items-center justify-center py-5 px-10 max-w-screen-2xl mx-auto">
-      {/* <h1 className="text-2xl font-bold p-5 text-black text-center">
+      <h1 className="text-2xl font-bold p-5 text-black text-center">
         This page is coming soon.
-      </h1> */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 self-center">
+      </h1>
+      {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-6 self-center">
         {articles.map((article) => (
           <div
             key={article.id}
@@ -123,7 +123,7 @@ export default function Articles() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

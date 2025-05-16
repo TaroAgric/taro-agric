@@ -15,7 +15,7 @@ export default function ComingSoon() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center sm:pt-16 pt-12 rounded-b-2xl overflow-hidden">
+    <div className="w-full flex flex-col items-center justify-center sm:pt-16 pt-12 rounded-b-2xl overflow-hidden max-w-screen-2xl mx-auto">
       <div className="w-full md:h-80 h-64 overflow-hidden">
         <Image
           src="/frozenChicken.svg"

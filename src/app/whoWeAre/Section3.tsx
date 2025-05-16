@@ -63,12 +63,12 @@ const slideImages = [
 export default function Section3() {
   return (
     <>
-      {/* <div className="flex flex-col items-center bg-[#1E624D] justify-center gap-10 p-5 max-w-screen-2xl mx-auto sm:mb-20 mb-10 overflow-hidden">
+      {/* <div className="flex flex-col items-center bg-[#1E624D] justify-center gap-10 p-5 max-w-screen-2xl mx-auto md:mb-48 sm:mb-20 mb-20 overflow-hidden">
         <div className="w-full mb-0">
           <GalleryCarousel autoSlide={true}>{slideImages}</GalleryCarousel>
         </div>
 
-        <Link href="">
+        <Link href="/resources">
           <p className="sm:text-2xl text-base text-white font-extrabold -mt-5">
             Go to Gallery
           </p>
