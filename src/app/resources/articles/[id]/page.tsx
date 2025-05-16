@@ -8,11 +8,19 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-interface ArticlePageProps {
+import { notFound } from "next/navigation";
+
+// interface ArticlePageProps {
+//   params: {
+//     id: string;
+//   };
+// }
+
+type Props = {
   params: {
     id: string;
   };
-}
+};
 
 interface ArticleData {
   id: string;
@@ -47,7 +55,9 @@ export async function generateStaticParams() {
   return files
     .filter((file) => file.endsWith(".md"))
     .map((file) => ({
-      id: file.replace(".md", ""),
+      params: {
+        id: file.replace(".md", ""),
+      },
     }));
 }
 
@@ -95,12 +105,14 @@ async function getArticleData(id: string): Promise<ArticleData | null> {
   }
 }
 
-export default async function ArticlePage({ params }: ArticlePageProps) {
+export default async function ArticlePage({ params }: Props) {
   const article = await getArticleData(params.id);
 
-  if (!article) {
-    return <div className="text-center py-20">Article not found</div>;
-  }
+  // if (!article) {
+  //   return <div className="text-center py-20">Article not found</div>;
+  // }
+
+  if (!article) return notFound();
 
   return (
     <>
