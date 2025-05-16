@@ -37,12 +37,18 @@ export async function generateStaticParams() {
   const articlesDir = path.join(process.cwd(), "src/content/articles/");
   const files = fs.readdirSync(articlesDir);
 
+  // return files
+  //   .filter((files) => files.endsWith(".md"))
+  //   .map((file) => {
+  //     const id = file.replace(".md", "");
+  //     return { id };
+  //   });
+
   return files
-    .filter((files) => files.endsWith(".md"))
-    .map((file) => {
-      const id = file.replace(".md", "");
-      return { id };
-    });
+    .filter((file) => file.endsWith(".md"))
+    .map((file) => ({
+      id: file.replace(".md", ""),
+    }));
 }
 
 async function getArticleData(id: string): Promise<ArticleData | null> {
