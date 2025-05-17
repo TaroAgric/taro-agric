@@ -33,7 +33,7 @@ export default function Section1() {
         </div>
 
         <div className="flex flex-col  max-w-screen-2xl mx-auto">
-          <div className="flex flex-col xl:flex-row xl:items-center items-start justify-center xl:justify-between py-5 px-10">
+          <div className="flex flex-col xl:flex-row items-center  justify-center  py-5 px-0">
             {/* <div className="xl:w-1/2 w-full flex justify-center xl:mr-10 mb-5 xl:mb-0">
               <Image
                 src="/outletGlobe.svg"
@@ -44,11 +44,11 @@ export default function Section1() {
               />
             </div> */}
 
-            <div className="flex flex-col justify-center xl:w-full w-full xl:h-[500px]">
+            <div className="flex flex-col justify-center xl:w-full w-full ">
               {/* <h1 className="sm:text-5xl text-[23px] sm:mb-7 mb-2 text-[#1E624D] font-extrabold xl:text-start text-center">
                 We Know No Distance
               </h1> */}
-              <p className="sm:text-2xl text-base text-black xl:text-start text-center xl:mb-10 mb-7">
+              <p className="sm:text-2xl text-base text-black  text-center xl:mb-10 mb-7 px-5">
                 We’re not everywhere yet, but we can deliver to you [almost] in
                 a heartbeat.
               </p>
@@ -57,7 +57,7 @@ export default function Section1() {
                 type="button"
                 onClick={handleShowPopup}
                 style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-                className="self-center xl:self-start xl:w-auto w-full text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer"
+                className="self-center  xl:w-80 w-80 text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer"
               >
                 Order Now
               </button>

@@ -40,7 +40,7 @@ export default function ComingSoon() {
           type="button"
           onClick={handleShowPopup}
           style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-          className=" self-center  xl:w-auto w-full text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer mt-5"
+          className=" self-center  xl:w-80 w-80 text-white sm:text-sm text-xs bg-[#1E624D] font-bold sm:py-5 py-2 sm:px-10 px-4 rounded-full cursor-pointer mt-5"
         >
           BECOME A DISTRIBUTOR
         </button>
