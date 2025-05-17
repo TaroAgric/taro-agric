@@ -55,9 +55,7 @@ export async function generateStaticParams() {
   return files
     .filter((file) => file.endsWith(".md"))
     .map((file) => ({
-      params: {
-        id: file.replace(".md", ""),
-      },
+      id: file.replace(".md", ""),
     }));
 }
 
