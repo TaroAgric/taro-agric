@@ -16,11 +16,11 @@ import { notFound } from "next/navigation";
 //   };
 // }
 
-type Props = {
-  params: {
-    id: string;
-  };
-};
+// type Props = {
+//   params: {
+//     id: string;
+//   };
+// };
 
 interface ArticleData {
   id: string;
@@ -103,7 +103,11 @@ async function getArticleData(id: string): Promise<ArticleData | null> {
   }
 }
 
-export default async function ArticlePage({ params }: Props) {
+export default async function ArticlePage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const article = await getArticleData(params.id);
 
   // if (!article) {
