@@ -125,7 +125,7 @@ export default function Section4() {
           </div>
         </div>
 
-        <div className="flex md:flex-row flex-col-reverse items-center justify-center sm:gap-10 gap-5">
+        <div className="flex md:flex-row flex-col items-center justify-center sm:gap-10 gap-5">
           <div className="md:w-1/2 w-full">
             <Image
               src="/researcher.svg"
@@ -142,7 +142,7 @@ export default function Section4() {
             </h2>
 
             <p className="sm:text-2xl text-base text-black sm:mb-5 mb-3">
-              We don't only bred healthy chicken for safe consumption, we also
+              We don't only breed healthy chicken for safe consumption, we also
               share knowledge and engage the community through{" "}
               <strong>trainings</strong>, <strong>researches</strong>, and{" "}
               <strong>outgrower schemes</strong>.

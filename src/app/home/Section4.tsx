@@ -20,13 +20,14 @@ export default function Section4() {
         Partnerships and Collaborations
       </h2>
 
-      <div className="flex md:flex-row flex-col md:gap-7 gap-10 items-center justify-around p-5 sm:mb-20 mb-10">
+      {/* <div className="flex md:flex-row flex-col md:gap-7 gap-10 items-center justify-around p-5 sm:mb-20 mb-10"> */}
+      <div className="grid md:grid-cols-3 grid-cols-1 place-items-center xl:gap-0 gap-20 p-5 sm:mb-20 mb-10">
         <Image
           src="/partnerGCRF.svg"
           alt=""
           width={100}
           height={100}
-          className="md:w-[12%] w-[50%]"
+          className="xl:w-1/2 md:w-full w-[50%] self-center"
         />
 
         <Image
@@ -34,7 +35,7 @@ export default function Section4() {
           alt=""
           width={100}
           height={100}
-          className="md:w-[10%] w-[40%]"
+          className="xl:w-1/3 md:w-1/2 w-[40%]"
         />
 
         <Image
@@ -42,23 +43,41 @@ export default function Section4() {
           alt=""
           width={100}
           height={100}
-          className="md:w-1/6 w-[60%]"
+          className="xl:w-1/2 md:w-full w-[60%]"
         />
         <Image
           src="/partnerUKRI.svg"
           alt=""
           width={100}
           height={100}
-          className="md:w-1/6 w-[60%]"
+          className="xl:w-1/2 md:w-full w-[60%]"
         />
         <Image
           src="/partnerUWE.svg"
           alt=""
           width={100}
           height={100}
-          className="md:w-1/6 w-[60%]"
+          className="xl:w-1/2 md:w-full w-[60%]"
         />
+        <Image
+          src="/CEDeF.svg"
+          alt=""
+          width={100}
+          height={100}
+          className="xl:w-1/3 md:w-1/2 w-[40%]"
+        />
+
+        <div className="md:col-span-3 flex md:flex-row flex-col justify-center items-center xl:mt-10 mt-0 gap-10">
+          <Image
+            src="/ephis.svg"
+            alt=""
+            width={100}
+            height={100}
+            className="xl:w-1/2 md:w-1/2 w-[40%]"
+          />
+        </div>
       </div>
+      {/* </div> */}
 
       <div className="md:w-[70%] w-[80%] flex xl:flex-row flex-col-reverse items-center justify-between rounded-2xl shadow-2xl bg-white py-5 sm:px-7 px-0">
         <div className="xl:w-1/2 w-full flex flex-col p-5">
@@ -71,9 +90,10 @@ export default function Section4() {
           </p>
 
           <input
+            required
             type="email"
             placeholder="Enter your email address"
-            className="w-full p-3 text-[#333] border border-gray-400 rounded-full focus:outline-none"
+            className="w-full p-3 text-[#333] xl:text-start text-center border border-gray-400 rounded-full focus:outline-none"
           />
 
           <button

@@ -40,8 +40,8 @@ const slideTexts = [
 export default function Section2() {
   return (
     <div className="flex flex-col items-center justify-center gap-5 p-5 max-w-screen-2xl mx-auto overflow-hidden sm:mb-20 mb-10">
-      <div className="flex md:flex-row flex-col-reverse items-center justify-around gap-5 md:mb-48 sm:mb-20 mb-20">
-        {/* <div className="flex flex-col md:w-1/2 w-full md:text-start text-center">
+      {/* <div className="flex md:flex-row flex-col-reverse items-center justify-around gap-5 md:mb-48 sm:mb-20 mb-20"> */}
+      {/* <div className="flex flex-col md:w-1/2 w-full md:text-start text-center">
           <h2 className="sm:text-4xl text-xl text-[#1E624D] sm:mb-6 mb-2 font-bold w-full">
             CEO's Message
           </h2>
@@ -60,7 +60,7 @@ export default function Section2() {
             allowFullScreen
           />
         </div> */}
-      </div>
+      {/* </div> */}
 
       <div className="flex flex-col text-center gap-5">
         {/* <div className="">
