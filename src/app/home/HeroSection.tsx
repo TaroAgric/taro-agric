@@ -114,7 +114,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="flex flex-col items-end  px-5 z-50 fixed right-0 top-[650px] max-w-screen-2xl mx-auto">
+        <div className="flex flex-col items-end  px-5 z-50 fixed right-0 top-[550px] max-w-screen-2xl mx-auto">
           <div className="flex flex-col items-center ">
             <a
               href="https://wa.me/2348037411405"
